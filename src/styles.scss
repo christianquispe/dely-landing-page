@@ -1,5 +1,5 @@
-$body-color: red;
+@import "~bootstrap/scss/bootstrap";
 
-.App {
-  color: $body-color;
+body {
+    font-family: 'Raleway', sans-serif;
 }
