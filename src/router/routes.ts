@@ -19,7 +19,7 @@ export const routes: IRoutes[] = [
   {
     path: "/about",
     component: About,
-    id: "home",
+    id: "about",
     exact: true,
   },
 ];
