@@ -1,5 +1,16 @@
-@import "~bootstrap/scss/bootstrap";
+@import "./assets/vars-styles";
 
 body {
   font-family: "Raleway", sans-serif;
 }
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+    "primary": $primary-color,
+     "second": $second-color
+
+
+);
+
+@import "~bootstrap/scss/bootstrap";
