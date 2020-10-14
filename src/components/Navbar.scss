@@ -1,50 +1,50 @@
-@import '../assets/vars-styles.scss';
+@import "../assets/vars-styles.scss";
 
 .bg-light.navbar {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .logo {
-	width: 60px;
+  width: 60px;
 }
 
 .Navbar-custom__item {
-	& {
-		position: relative;
-		transition: all .2s linear;
-			padding: 10px 15px !important;
-		color: #262626 !important;
-		font-family: 'Raleway', sans-serif;;
-	}
-	&::before {
-		content: "";
-				display: none;
-		height: 4px;
-		left: 15px;
-		right: 15px;
-		position: absolute;
-		bottom: -10px;
-		background-color: transparent;
-		transition: all .2s linear;
-		opacity: 0;
-	}
-	&:hover {
-		color: $primary-color !important;
-	}
-	&:hover::before {
-		opacity: 1;
-		bottom: 0;
-		background-color: $primary-color;
-	}
+  & {
+    position: relative;
+    transition: all 0.2s linear;
+    padding: 10px 15px !important;
+    color: #262626 !important;
+    font-family: "Raleway", sans-serif;
+  }
+  &::before {
+    content: "";
+    display: none;
+    height: 4px;
+    left: 15px;
+    right: 15px;
+    position: absolute;
+    bottom: -10px;
+    background-color: transparent;
+    transition: all 0.2s linear;
+    opacity: 0;
+  }
+  &:hover {
+    color: $primary-color !important;
+  }
+  &:hover::before {
+    opacity: 1;
+    bottom: 0;
+    background-color: $primary-color;
+  }
 }
 
 @media screen {
-	@media (min-width: 992px) {
-		.Navbar-custom__item {
-		padding: 30px 15px !important;
-			&::before {
-		display: block;
-			}
-		}
-	}
+  @media (min-width: 992px) {
+    .Navbar-custom__item {
+      padding: 30px 15px !important;
+      &::before {
+        display: block;
+      }
+    }
+  }
 }

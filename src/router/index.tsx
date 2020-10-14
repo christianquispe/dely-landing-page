@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import RouteComponent from "./Route";
 import { IRoutes, routes } from "./routes";
-import '../styles.scss'
+import "../styles.scss";
 
 const RouteApp: React.FC = () => (
   <Router>
