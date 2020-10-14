@@ -1,0 +1,26 @@
+$red-bg: #ff161f;
+$white: #ffffff;
+
+.Banner {
+  background-color: $red-bg;
+  height: 690px;
+  display: flex;
+  align-items: flex-end;
+}
+.Banner__btn {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Banner__btn .btn {
+  color: $white;
+  font-family: "Raleway", sans-serif;
+  background-color: unset;
+  border-radius: 20px;
+  width: 255px;
+  border-width: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
