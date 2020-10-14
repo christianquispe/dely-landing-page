@@ -9,6 +9,7 @@
     "dev": "yarn start",
     "build": "webpack --config webpack.config.prod.js",
     "prettier:lint": "prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,graphql,less}' --write=false --list-different",
+    "prettier:fix": "yarn prettier:lint --write=true"
   },
   "repository": {
     "type": "git",
