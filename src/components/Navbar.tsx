@@ -1,76 +1,54 @@
 import React from "react";
-import {
-  Container,
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import "./Navbar.scss";
-import logo from "../assets/logo.jpg";
 
 export const NavBar: React.FC = () => {
   return (
     <Container>
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#">
-          <img className="logo" src={logo} />
+          <h1 className="Navbar-title">DELY</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link
               className="font-weight-bold Navbar-custom__item"
-              href="#home"
+              href="#about-us"
             >
-              Home
+              Nosotros
             </Nav.Link>
             <Nav.Link
               className="font-weight-bold Navbar-custom__item"
-              href="#link"
+              href="#products-and-services"
             >
-              Link large
+              Productos y servicios
             </Nav.Link>
             <Nav.Link
               className="font-weight-bold Navbar-custom__item"
-              href="#home"
+              href="#brands"
             >
-              Home
+              Marcas Dely
             </Nav.Link>
             <Nav.Link
               className="font-weight-bold Navbar-custom__item"
-              href="#link"
+              href="#locate-us"
             >
-              Link short
+              Ubícanos
             </Nav.Link>
             <Nav.Link
               className="font-weight-bold Navbar-custom__item"
-              href="#home"
+              href="#contact"
             >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              className="font-weight-bold Navbar-custom__item"
-              href="#link"
-            >
-              Link dafsa
-            </Nav.Link>
-            <Nav.Link
-              className="font-weight-bold Navbar-custom__item"
-              href="#home"
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              className="font-weight-bold Navbar-custom__item"
-              href="#link"
-            >
-              Linkfasfsa
+              Contacto
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <a href="http://www.dely.pe/" target="_blank" rel="noopener noreferrer">
+          <Button size="sm" type="primary">
+            Consultar Factura / boleta electrónica
+          </Button>
+        </a>
       </Navbar>
     </Container>
   );
