@@ -7,7 +7,8 @@
     "clean:build": "yarn clean dist out build",
     "start": "yarn clean && webpack-dev-server --config webpack.config.dev.js",
     "dev": "yarn start",
-    "build": "webpack --config webpack.config.prod.js"
+    "build": "webpack --config webpack.config.prod.js",
+    "prettier:lint": "prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,graphql,less}' --write=false --list-different",
   },
   "repository": {
     "type": "git",
