@@ -1,0 +1,46 @@
+$red-bg: #96ce1f;
+$bg-color: #f7e000;
+$white: #ffffff;
+$color: #2d3d0e;
+
+.Services {
+  background-color: $red-bg;
+  min-height: 390px;
+  padding-top: 40px;
+  color: $color;
+  font-family: "Raleway", sans-serif;
+}
+.Services__btn {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Services__title {
+  font-weight: bold;
+  font-size: 60px;
+}
+.Services__subtitle {
+  font-weight: bold;
+  font-size: 32px;
+}
+.Services__item {
+  font-size: 22px;
+  font-weight: 500;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px 0;
+}
+.Services__item__img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: $bg-color;
+}
+.Services__img {
+  height: 240px;
+  background-color: $bg-color;
+}
