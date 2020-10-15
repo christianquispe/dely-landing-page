@@ -1,0 +1,18 @@
+@import "../../assets/vars-styles";
+
+.Box_example {
+  width: 90%;
+  height: 500px;
+  background-color: $second-color;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.AboutUs__part-right,
+.AboutUs__part-left {
+  width: 50%;
+}
+
+.AboutUs__title {
+    text-align: center;
+}
