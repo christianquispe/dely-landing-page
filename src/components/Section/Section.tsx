@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import { Container } from "react-bootstrap";
-import './styles.scss';
+import "./styles.scss";
 
 interface ISection
   extends React.DetailedHTMLProps<
@@ -11,13 +11,18 @@ interface ISection
   fluid?: boolean;
 }
 
-export const Section: React.FC<ISection> = (props) => {
-  const classes = classNames(props.className, "Section" , {
-    [`Section-fluid`]: props.fluid,
+export const Section: React.FC<ISection> = ({
+  className,
+  children,
+  fluid,
+  ...rest
+}) => {
+  const classes = classNames(className, "Section", {
+    [`Section-fluid`]: fluid,
   });
   return (
-    <section>
-      <Container className={classes}>{props.children}</Container>
+    <section className={classes} {...rest}>
+      <Container>{children}</Container>
     </section>
   );
 };
