@@ -1,2 +1,20 @@
 $primary-color: #f21628;
 $second-color: #9fd923;
+$font-size-base-custom: 14px;
+$black: #000;
+
+// Typography
+// ---
+$heading-1-size: ceil($font-size-base-custom * 4.71);
+$heading-2-size: ceil($font-size-base-custom * 4.14);
+$heading-3-size: ceil($font-size-base-custom * 3.71);
+$heading-4-size: ceil($font-size-base-custom * 3.42);
+$heading-5-size: ceil($font-size-base-custom * 3.14);
+$heading-6-size: ceil($font-size-base-custom * 2.71);
+$heading-color: fade($black, 85%);
+
+// Typography
+// ---
+$typography-title-font-weight: 600;
+$typography-title-margin-top: 1.2em;
+$typography-title-margin-bottom: 0.5em;
