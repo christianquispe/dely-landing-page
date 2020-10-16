@@ -8,7 +8,7 @@ body {
 /* make the customizations */
 $theme-colors: (
   "primary": $primary-color,
-  "second": $second-color,
+  "secondary": $second-color,
 );
 
 @import "~bootstrap/scss/bootstrap";
