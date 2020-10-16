@@ -1,0 +1,10 @@
+@import "../../assets/vars-styles";
+.Products {
+  .nav-tabs {
+    justify-content: flex-end;
+  }
+  .nav-item.nav-link {
+    color: $black;
+    font-size: 25px;
+  }
+}
