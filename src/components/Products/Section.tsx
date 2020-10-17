@@ -29,11 +29,9 @@ export const Products = () => {
     <Section className="Products" fluid={true}>
       <Row>
         <Col xs={12} md={6}>
-          <div className="Services__content">
-            <Title level={2} className="Services__title">
+            <Title level={2} className="Products__title">
               Products
             </Title>
-          </div>
         </Col>
         <Col xs={12}>
           <Row className="d-flex justify-content-end">
