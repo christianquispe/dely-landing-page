@@ -1,0 +1,19 @@
+@import "../../assets/vars-styles";
+
+.BrandsSection__img {
+  width: 300px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(100%);
+  transition: 0.3s all linear;
+  cursor: pointer;
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.BrandsSection__title {
+  color: $second-color;
+}
