@@ -1,5 +1,8 @@
 @import "../../assets/vars-styles";
 .Products {
+  .Products__title {
+    color: $primary-color;
+  }
   .nav-tabs {
     justify-content: flex-end;
   }

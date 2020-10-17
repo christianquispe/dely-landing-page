@@ -5,7 +5,7 @@
   @include typography-title-1();
 }
 .title-level-2 {
-  @include typography-title-2($primary-color);
+  @include typography-title-2();
 }
 .title-level-3 {
   @include typography-title-3();
