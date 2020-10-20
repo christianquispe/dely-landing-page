@@ -20,10 +20,10 @@ export const Title: React.FC<ITitle> = (props) => {
     [`title-level-${props.level}`]: props.level,
     [`title-level-1`]: !props.level,
   });
-  if (props.level !== 1) {
+  if (props.level >= 1) {
     component = `h${props.level}`;
   }
-  component = `h${props.level}`;
+  component = `h1`;
   const Component = component as any;
 
   return <Component className={classes}>{props.children}</Component>;
