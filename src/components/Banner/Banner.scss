@@ -24,3 +24,8 @@ $white: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.Banner__img {
+  height: 500px;
+  object-fit: cover;
+}
