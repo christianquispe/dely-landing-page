@@ -1,0 +1,39 @@
+@import "../../assets/vars-styles";
+@import "../../assets/viewport-vars";
+
+.Locations__title {
+  color: $primary-color;
+}
+
+.Locations__img {
+  display: none;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.Locations__item {
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 1px solid $primary-color;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .2s linear all;
+  &:hover {
+    background-color: $primary-color;
+    span {
+      color: #ffffff !important;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: $screen-lg) {
+    .Locations__img {
+      display: block;
+      max-width: 100%;
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
