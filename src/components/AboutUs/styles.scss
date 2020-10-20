@@ -1,11 +1,12 @@
 @import "../../assets/vars-styles";
 
-.Box_example {
+.AboutUs__img {
   width: 90%;
   height: 500px;
   background-color: $second-color;
   border-radius: 10px;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .AboutUs__part-right,

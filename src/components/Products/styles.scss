@@ -13,6 +13,7 @@
 }
 
 .Products__item {
+  transition: .15s linear box-shadow;
   &:hover {
     cursor: pointer;
     box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.1);

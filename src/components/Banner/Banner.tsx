@@ -7,8 +7,9 @@ export const Banner = () => {
     <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc8npEIel9HhN_uZx0o-A5zj92mwP5Ax47Ng&usqp=CAU"
+          style={{ height: "575px", objectFit: "cover" }}
+          className="d-block w-100 Banner__img"
+          src="https://gananci.org/wp-content/uploads/2017/03/promocion-cruzada-x3.png"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,8 +19,9 @@ export const Banner = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc8npEIel9HhN_uZx0o-A5zj92mwP5Ax47Ng&usqp=CAU"
+          className="d-block w-100 Banner__img"
+          style={{ height: "575px", objectFit: "cover" }}
+          src="https://www.innovadeluxe.com/wp-content/uploads/2018/01/Banner-crear-banner-1280x720.png"
           alt="Third slide"
         />
 
@@ -30,8 +32,9 @@ export const Banner = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc8npEIel9HhN_uZx0o-A5zj92mwP5Ax47Ng&usqp=CAU"
+          className="d-block w-100 Banner__img"
+          style={{ height: "575px", objectFit: "cover" }}
+          src="https://www.cyberclick.es/hubfs/blog/Que%20es%20un%20banner-1.jpg"
           alt="Third slide"
         />
 
