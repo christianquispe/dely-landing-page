@@ -8,7 +8,7 @@ import {
   Image as $Image,
   ImageProps,
   Nav,
-  Row
+  Row,
 } from "react-bootstrap";
 import "./styles.scss";
 

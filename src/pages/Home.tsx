@@ -7,8 +7,9 @@ import { NavBar } from "@components/Navbar";
 import { Products } from "@components/Products";
 import { Services } from "@components/Services";
 import { Supports } from "@components/Supports";
+
 import LocationsContext, {
-  LocationContextDefault
+  LocationContextDefault,
 } from "@helpers/LocationContext";
 import React from "react";
 
