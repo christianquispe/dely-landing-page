@@ -1,21 +1,61 @@
 @import "../../assets/vars-styles";
+@import "../../assets/viewport-vars";
+
+$white: #ffffff;
+
 .Products {
   .Products__title {
     color: $primary-color;
+    text-align: center;
   }
   .nav-tabs {
-    justify-content: flex-end;
+    justify-content: center;
   }
   .nav-item.nav-link {
     color: $black;
-    font-size: 25px;
+    font-size: 24px;
+    border: inherit;
+    border-radius: 24px;
+    transition: all 0.1s linear;
+  }
+}
+
+.Products__heading {
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 15px;
+  h2 {
+    margin: 0;
+  }
+  .nav-tabs {
+    border: unset;
+    display: flex;
+    align-items: center;
+    .nav-item.nav-link.active {
+      background-color: $second-color;
+      color: $white;
+    }
+    .nav-item.nav-link + .nav-item.nav-link {
+      margin-left: 10px;
+    }
+    .nav-item.nav-link:hover {
+      // color: $white;
+      color: $second-color;
+      // box-shadow: 0px 2px 3px 0px $second-color;
+      // border-radius: unset;
+    }
+    .nav-item.nav-link.active:hover {
+      color: $white;
+    }
   }
 }
 
 .Products__item {
-  transition: .15s linear box-shadow;
+  transition: 0.15s linear box-shadow;
   &:hover {
     cursor: pointer;
     box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   }
 }
+
