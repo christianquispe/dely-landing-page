@@ -2,7 +2,7 @@ import { Section } from "@components/Section";
 import { Title } from "@components/Typography";
 import LocationsContext from "@helpers/LocationContext";
 import React, { useContext, useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 import { Item } from "./Item";
 import "./styles.scss";
 
@@ -27,6 +27,22 @@ export const Location = () => {
               </Col>
             );
           })}
+          <div>
+            <p>Contáctanos</p>{" "}
+            <a
+              href="https://wa.me/+51993583676?text=Hola"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="success">
+                <i
+                  className="fab fa-whatsapp"
+                  style={{ marginRight: "5px" }}
+                ></i>
+                WhatsApp
+              </Button>
+            </a>
+          </div>
         </Col>
         <Col className="Locations__container-img" xs={12} md={6}>
           <img

@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { Button, Carousel } from "react-bootstrap";
 import "./Banner.scss";
 
 export const Banner = () => {
@@ -15,6 +15,16 @@ export const Banner = () => {
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <a
+            href="https://wa.me/+51993583676?text=Hola"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="success">
+              <i className="fab fa-whatsapp" style={{ marginRight: "5px" }}></i>
+              WhatsApp
+            </Button>
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -28,6 +38,16 @@ export const Banner = () => {
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a
+            href="https://wa.me/+51993583676?text=Hola"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="success">
+              <i className="fab fa-whatsapp" style={{ marginRight: "5px" }}></i>
+              WhatsApp
+            </Button>
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -43,6 +63,16 @@ export const Banner = () => {
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
+          <a
+            href="https://wa.me/+51993583676?text=Hola"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="success">
+              <i className="fab fa-whatsapp" style={{ marginRight: "5px" }}></i>
+              WhatsApp
+            </Button>
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
