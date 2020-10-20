@@ -2,12 +2,13 @@ import { Section } from "@components/Section";
 import { Title } from "@components/Typography";
 import React from "react";
 import {
-    Col,
-    Form,
-    Image as $Image,
-    ImageProps,
-    Nav,
-    Row
+  Button,
+  Col,
+  Form,
+  Image as $Image,
+  ImageProps,
+  Nav,
+  Row
 } from "react-bootstrap";
 import "./styles.scss";
 
@@ -24,12 +25,10 @@ const Image: React.FC<ImageProps> = (props) => (
 export const Footer = () => {
   return (
     <Section className="Footer">
+      <Title level={2} className="Footer__title">
+        DELY
+      </Title>
       <Row>
-        <Col xs={12} md={12}>
-          <Title className="Locations__title" level={2}>
-            Puntos de venta
-          </Title>
-        </Col>
         <Col className="Locations__container-img" xs={12} md={12}>
           <Row>
             <Col xs={6} md={6} lg={4}>
@@ -65,7 +64,9 @@ export const Footer = () => {
                   </a>
                 </li>
               </ul>
-              <p className="text-white font-weight-bold">TODOS LOS DERECHOS RESERVADOS</p>
+              <p className="text-white font-weight-bold">
+                TODOS LOS DERECHOS RESERVADOS
+              </p>
             </Col>
             <Col xs={6} md={6} lg={3}>
               <Nav defaultActiveKey="/home" className="flex-column">
@@ -81,24 +82,28 @@ export const Footer = () => {
                 <Nav.Link
                   className="text-white text-uppercase"
                   eventKey="link-1"
+                  href="#products-and-services"
                 >
                   Productos y servicios
                 </Nav.Link>
                 <Nav.Link
                   className="text-white text-uppercase"
                   eventKey="link-2"
+                  href="#brands"
                 >
                   Marcas dely
                 </Nav.Link>
                 <Nav.Link
                   className="text-white text-uppercase"
                   eventKey="link-2"
+                  href="#locate-us"
                 >
                   Ubicanos
                 </Nav.Link>
                 <Nav.Link
-                  className="text-white tex-uppercase"
+                  className="text-white text-uppercase"
                   eventKey="link-2"
+                  href="#contact"
                 >
                   Contacto
                 </Nav.Link>
@@ -108,8 +113,8 @@ export const Footer = () => {
               <span className="text-white tex-uppercase font-weight-bold">
                 INFORMES
               </span>
-              <br/>
-              <br/>
+              <br />
+              <br />
               <Form.Group>
                 <Form.Control
                   required
@@ -132,6 +137,16 @@ export const Footer = () => {
                   placeholder="*Escribe tu mensaje aquí"
                   className="Form_input"
                 />
+                <div
+                  style={{ padding: "20px 0" }}
+                  className="d-flex flex-nowrap"
+                >
+                  <span className="text-white">
+                    Los campos se deben llenar obligatoriamente para poder
+                    procesar correctameent la solicitud
+                  </span>
+                  <Button>Enviar</Button>
+                </div>
               </Form.Group>
             </Col>
           </Row>
