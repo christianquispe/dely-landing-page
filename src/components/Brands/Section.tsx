@@ -11,7 +11,7 @@ import "./styles.scss";
 
 export const Brands = () => {
   return (
-    <Section>
+    <Section id="brands">
       <Title level={2} className="BrandsSection__title">
         Marcas Dely
       </Title>
