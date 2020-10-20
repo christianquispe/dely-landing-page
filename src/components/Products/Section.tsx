@@ -10,7 +10,7 @@ export const Products = () => {
   const productList = dataProducts.map((product) => {
     return (
       <Col key={product.id} xs={12} md={6} lg={4}>
-        <Card style={{ width: "100%", marginBottom: "20px" }}>
+        <Card style={{ width: "100%", marginBottom: "20px" }} className="Products__item">
           <Card.Img
             variant="top"
             src="https://cdnx.jumpseller.com/carabela/image/11642227/resize/265/265?1600205590"
@@ -29,9 +29,9 @@ export const Products = () => {
     <Section className="Products" fluid={true}>
       <Row>
         <Col xs={12} md={6}>
-            <Title level={2} className="Products__title">
-              Products
-            </Title>
+          <Title level={2} className="Products__title">
+            Products
+          </Title>
         </Col>
         <Col xs={12}>
           <Row className="d-flex justify-content-end">
