@@ -33,7 +33,7 @@ export const Products = () => {
     <Section className="Products" fluid={true}>
       <div className="Products__heading">
         <Title level={2} className="Products__title">
-          Products
+          Productos
         </Title>
         <Tabs
           id="controlled-tab-example"
