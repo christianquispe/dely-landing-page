@@ -1,0 +1,39 @@
+@import "../../assets/vars-styles";
+@import "../../assets/viewport-vars";
+
+.Supports__container-img {
+  border-top: 1px solid $gray-color;
+  border-bottom: 1px solid $gray-color;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Supports__title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  display: block;
+}
+
+.Supports__img {
+  width: 150px;
+  filter: grayscale(100%);
+  transition: 0.3s all linear;
+  object-fit: contain;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+@media screen {
+  @media (min-width: $screen-lg) {
+    .Supports__img {
+      width: 190px;
+      height: 90px;
+    }
+  }
+}
