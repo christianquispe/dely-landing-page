@@ -1,9 +1,9 @@
 import React from "react";
 // Here goes Routing
 import { BrowserRouter as Router, Switch } from "react-router-dom";
+import "../styles.scss";
 import RouteComponent from "./Route";
 import { IRoutes, routes } from "./routes";
-import "../styles.scss";
 
 const RouteApp: React.FC = () => (
   <Router>
