@@ -8,10 +8,13 @@ export const AboutUs = () => {
   return (
     <section>
       <Container>
-        <Section>
+        <Section id="about-us">
           <Row>
             <Col xs={12} lg={6}>
-              <div className="Box_example"></div>
+              <img
+                className="AboutUs__img"
+                src="https://brashli.com/wp-content/uploads/2018/11/trabaja-con-nosotros-enex.jpg"
+              />
             </Col>
             <Col xs={12} lg={6}>
               <Title className="AboutUs__title" level={2}>

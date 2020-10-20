@@ -7,7 +7,7 @@ import "./Services.scss";
 
 export const Services = () => {
   return (
-    <Section className="Services" fluid={true}>
+    <Section className="Services" fluid={true} id="products-and-services">
       <Container>
         <Row>
           <Col xs={12} md={6}>
