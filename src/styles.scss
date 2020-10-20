@@ -9,6 +9,7 @@ body {
 $theme-colors: (
   "primary": $primary-color,
   "secondary": $second-color,
+  "success": #01e675,
 );
 
 @import "~bootstrap/scss/bootstrap";
