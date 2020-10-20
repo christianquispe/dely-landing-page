@@ -59,3 +59,20 @@ $white: #ffffff;
   }
 }
 
+@media screen {
+  @media (min-width: $screen-lg) {
+    .Products__heading {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 15px;
+      .tab-content {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .nav-tabs {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
