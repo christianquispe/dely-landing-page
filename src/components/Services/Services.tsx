@@ -1,6 +1,8 @@
 import { Section } from "@components/Section";
+import { Title } from "@components/Typography";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import image from "../../assets/servicios/1.png";
 import "./Services.scss";
 
 export const Services = () => {
@@ -10,7 +12,9 @@ export const Services = () => {
         <Row>
           <Col xs={12} md={6}>
             <div className="Services__content">
-              <h2 className="Services__title">Servicios</h2>
+              <Title level={2} className="Services__title">
+                Servicios
+              </Title>
               <p className="Services__subtitle">Ventas Institucionales</p>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -21,7 +25,7 @@ export const Services = () => {
             </div>
           </Col>
           <Col xs={12} md={6}>
-            <div className="Services__img"></div>
+            <img src={image} alt="" className="Services__img" />
           </Col>
         </Row>
         <Row>

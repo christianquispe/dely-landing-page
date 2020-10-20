@@ -3,19 +3,25 @@
 
 .title-level-1 {
   @include typography-title-1();
+  font-family: "Suez One", serif;
 }
 .title-level-2 {
   @include typography-title-2();
+  font-family: "Suez One", serif;
 }
 .title-level-3 {
   @include typography-title-3();
+  font-family: "Suez One", serif;
 }
 .title-level-4 {
   @include typography-title-4();
+  font-family: "Suez One", serif;
 }
 .title-level-5 {
   @include typography-title-5();
+  font-family: "Suez One", serif;
 }
 .title-level-6 {
   @include typography-title-6();
+  font-family: "Suez One", serif;
 }

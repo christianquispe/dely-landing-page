@@ -1,4 +1,5 @@
-$red-bg: #96ce1f;
+@import '../../assets/vars-styles';
+$red-bg: $second-color;
 $bg-color: #f7e000;
 $white: #ffffff;
 $color: #2d3d0e;
@@ -42,5 +43,4 @@ $color: #2d3d0e;
 }
 .Services__img {
   height: 240px;
-  background-color: $bg-color;
 }
