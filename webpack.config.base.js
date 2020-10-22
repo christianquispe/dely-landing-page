@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { resolveTsAliases } = require("resolve-ts-aliases");
 const { SourceMapDevToolPlugin } = require("webpack");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -67,6 +68,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new Dotenv(),
     new HtmlWebpackPlugin({
       inject: true,
       template: "./public/index.html",
@@ -75,4 +77,5 @@ module.exports = {
       filename: "[file].map",
     }),
   ],
+  target: "web",
 };
