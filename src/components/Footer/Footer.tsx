@@ -1,16 +1,9 @@
 import { Section } from "@components/Section";
 import { Title } from "@components/Typography";
 import React from "react";
-import {
-  Button,
-  Col,
-  Form,
-  Image as $Image,
-  ImageProps,
-  Nav,
-  Row,
-} from "react-bootstrap";
+import { Col, Image as $Image, ImageProps, Nav, Row } from "react-bootstrap";
 import "./styles.scss";
+import { FormContact } from "./FormContact";
 
 const Image: React.FC<ImageProps> = (props) => (
   <$Image
@@ -115,39 +108,7 @@ export const Footer = () => {
               </span>
               <br />
               <br />
-              <Form.Group>
-                <Form.Control
-                  required
-                  size="sm"
-                  type="text"
-                  placeholder="*Nombres"
-                  className="Form_input"
-                />
-                <br />
-                <Form.Control
-                  className="Form_input"
-                  required
-                  size="sm"
-                  placeholder="*E - Mail"
-                />
-                <br />
-                <Form.Control
-                  as="textarea"
-                  size="sm"
-                  placeholder="*Escribe tu mensaje aquí"
-                  className="Form_input"
-                />
-                <div
-                  style={{ padding: "20px 0" }}
-                  className="d-flex flex-nowrap"
-                >
-                  <span className="text-white">
-                    Los campos se deben llenar obligatoriamente para poder
-                    procesar correctameent la solicitud
-                  </span>
-                  <Button>Enviar</Button>
-                </div>
-              </Form.Group>
+              <FormContact />
             </Col>
           </Row>
         </Col>
