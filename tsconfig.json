@@ -6,6 +6,7 @@
     "paths": {
       "@*": ["./src/*"],
       "@i18n/*": ["./i18n/*"],
+      "@config/*": ["./src/config/*"],
       "@assets/*": ["./src/assets/*"],
       "@helpers/*": ["./src/helpers/*"],
       "@components/*": ["./src/components/*"],
@@ -26,7 +27,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": false,
-    "types": ["jest"],
+    "types": ["jest", "node"],
     "target": "esnext",
     "noImplicitAny": false,
     "noEmit": true
