@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
-import emailjs from "emailjs-com";
 import {
-  TO_EMAIL,
-  SUBJECT_MAIL,
   SERVICE_ID,
+  SUBJECT_MAIL,
   TEMPLATE_ID,
-  USER_ID,
+  TO_EMAIL,
   TO_NAME,
+  USER_ID
 } from "@config/constants";
+import emailjs from "emailjs-com";
+import React, { useState } from "react";
 
 export const FormContact: React.FC = () => {
   const [values, setValues] = useState({ name: "", email: "", message: "" });
@@ -44,35 +43,37 @@ export const FormContact: React.FC = () => {
 
   return (
     <form id="contact-form" className="contact-form" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        required={true}
-        name="name"
-        placeholder="*Nombres"
-        onChange={handleInputChange}
-        className="Form_input"
-      />
-      <input
-        type="email"
-        name="email"
-        required={true}
-        placeholder="*E-mail"
-        onChange={handleInputChange}
-        className="Form_input"
-      />
-      <textarea
-        name="message"
-        placeholder="*Escribe tu mensaje aqui"
-        onChange={handleInputChange}
-        className="Form_input"
-      />
-      <div style={{ padding: "20px 0" }} className="d-flex flex-nowrap">
-        <span className="text-white">
-          Los campos se deben llenar obligatoriamente para poder procesar
-          correctameent la solicitud
-        </span>
-        {/* <Button type="submit">Enviar</Button> */}
-        <input type="submit" value="Enviar" />
+      <div className="form-group">
+        <input
+          type="text"
+          required={true}
+          name="name"
+          placeholder="*Nombres"
+          onChange={handleInputChange}
+          className="Form_input form-control"
+        />
+        <input
+          type="email"
+          name="email"
+          required={true}
+          placeholder="*E-mail"
+          onChange={handleInputChange}
+          className="Form_input form-control"
+        />
+        <textarea
+          name="message"
+          placeholder="*Escribe tu mensaje aqui"
+          onChange={handleInputChange}
+          className="Form_input form-control"
+        />
+        <div style={{ padding: "20px 0" }} className="d-flex flex-nowrap">
+          <span className="text-white">
+            Los campos se deben llenar obligatoriamente para poder procesar
+            correctameent la solicitud
+          </span>
+          {/* <Button type="submit">Enviar</Button> */}
+          <input type="submit" value="Enviar" className="btn btn-primary" />
+        </div>
       </div>
     </form>
   );
