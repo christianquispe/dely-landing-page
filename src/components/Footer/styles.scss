@@ -22,6 +22,7 @@
 
 .Form_input {
   background-color: $primary-color !important;
+
   border-color: #ffffff !important;
   color: #ffffff !important;
   border-radius: 0 !important;
@@ -39,5 +40,8 @@
   &::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #ffffff !important;
+  }
+  & + .Form_input {
+    margin-top: 17px;
   }
 }
