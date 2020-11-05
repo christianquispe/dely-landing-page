@@ -17,10 +17,10 @@ export const Services = () => {
               </Title>
               <p className="Services__subtitle">Ventas Institucionales</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Tempore asperiores minima mollitia est quis consectetur earum
-                nemo esse. Dolorem officiis impedit est inventore, provident
-                explicabo doloremque aliquam perspiciatis facere porro!
+                Estamos dispuestos a brindar un servicio especializado y precios
+                justos, además contamos con todos los certificados
+                correspondientes y el Registro Nacional de Proveedores (RNP)
+                vigente.
               </p>
             </div>
           </Col>
@@ -54,6 +54,15 @@ export const Services = () => {
             </div>
           </Col>
         </Row>
+        <div className="Services__sales-content">
+          <p className="Services__subtitle">Ventas Corporativa</p>
+          <p>
+            Contamos con personal efectivo dispuesto a ofrecer productos de
+            calidad y con las mejores ofertas del mercado, para distintos fines
+            tales como: Donaciones, Productos para la realización de canastas,
+            entre otros.
+          </p>
+        </div>
       </Container>
     </Section>
   );
