@@ -9,10 +9,9 @@ import { Products } from "@components/Products";
 import { Services } from "@components/Services";
 import { Supports } from "@components/Supports";
 import LocationsContext, {
-  LocationContextDefault
+  LocationContextDefault,
 } from "@helpers/LocationContext";
 import React from "react";
-
 
 export const Home: React.FC = () => {
   return (

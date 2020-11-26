@@ -2,15 +2,14 @@ import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import "./Navbar.scss";
 import { Title } from "./Typography";
+import logo from "../assets/logo-web/logo-sin-slogan.png";
 
 export const NavBar: React.FC = () => {
   return (
     <Container>
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#">
-          <Title level={1} className="Navbar-title">
-            DELY
-          </Title>
+          <img style={{ width: "100px" }} src={logo} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

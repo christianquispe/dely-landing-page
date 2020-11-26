@@ -1,6 +1,8 @@
 import { Section } from "@components/Section";
 import { Title } from "@components/Typography";
-import LocationsContext from "@helpers/LocationContext";
+import LocationsContext, {
+  ILocationContextDefault
+} from "@helpers/LocationContext";
 import React, { useContext, useState } from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { Item } from "./Item";
@@ -9,6 +11,11 @@ import "./styles.scss";
 export const Location = () => {
   const [location, setLocation] = useState(0);
   const allLocations = useContext(LocationsContext);
+  const indexed = allLocations.reduce(
+    (acc, el: ILocationContextDefault) => [...acc, { [el.key]: el }],
+    []
+  );
+  console.log(Object.keys(indexed[0]));
   return (
     <Section id="locate-us">
       <Row className="align-items-center">
@@ -16,7 +23,22 @@ export const Location = () => {
           <Title className="Locations__title" level={2}>
             Puntos de venta
           </Title>
-          {allLocations.map((location, index) => {
+          {allLocations.map((location: ILocationContextDefault, index) => {
+            if (location.key === "address") {
+              return (
+                <>
+                <div onClick={() => setLocation(index)} style={{ marginBottom:"20px" }}>
+                  <span className="d-block font-weight-bold">
+                    {location.address}
+                  </span>
+                  <span className="d-block">
+                    Horario de atención: {location.businessHours}
+                  </span>
+                </div>
+                <p>Sucursales</p>
+                </>
+              );
+            }
             return (
               <Col key={index} xs="12">
                 <Item
@@ -27,22 +49,6 @@ export const Location = () => {
               </Col>
             );
           })}
-          <div>
-            <p>Contáctanos</p>{" "}
-            <a
-              href="https://wa.me/+51993583676?text=Hola"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="success">
-                <i
-                  className="fab fa-whatsapp"
-                  style={{ marginRight: "5px" }}
-                ></i>
-                WhatsApp
-              </Button>
-            </a>
-          </div>
         </Col>
         <Col className="Locations__container-img" xs={12} md={6}>
           <img

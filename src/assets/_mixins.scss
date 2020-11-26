@@ -68,13 +68,3 @@
     $typography-title-margin-bottom
   );
 }
-
-@mixin typography-title-6 {
-  @include typography-title(
-    $heading-6-size,
-    $typography-title-font-weight,
-    1.23,
-    $heading-color,
-    $typography-title-margin-bottom
-  );
-}

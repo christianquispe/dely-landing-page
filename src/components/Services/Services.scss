@@ -5,15 +5,20 @@ $white: #ffffff;
 $color: #2d3d0e;
 
 .Services {
-  background-color: $red-bg;
   min-height: 390px;
   padding-top: 40px;
-  color: $color;
-  font-family: "Raleway", sans-serif;
 }
+
 .Services__sales-content {
   margin-top: 15px;
 }
+
+.services-content-layout {
+  display: flex;
+  padding: 30px 35px;
+  flex-direction: column;
+}
+
 .Services__btn {
   margin-bottom: 40px;
   display: flex;
@@ -22,28 +27,40 @@ $color: #2d3d0e;
 }
 
 .Services__title {
-  font-weight: bold;
-  font-size: 60px;
+  color: $primary-color;
 }
+
 .Services__subtitle {
   font-weight: bold;
   font-size: 32px;
 }
+
 .Services__item {
   font-size: 20px;
   font-weight: 500;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: auto 1fr;
+  display: flex;
   align-items: center;
-  padding: 10px 0;
+  justify-content: center;
+  padding: 10px 15px;
+  span {
+    padding-left: 3px;
+    text-align: center;
+  }
 }
+
 .Services__item__img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
   background-color: $bg-color;
 }
+
 .Services__img {
   height: 240px;
+}
+
+@media screen and (min-width: $screen-md) {
+  .services-content-layout {
+    flex-direction: row;
+  }
 }

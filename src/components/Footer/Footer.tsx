@@ -2,8 +2,8 @@ import { Section } from "@components/Section";
 import { Title } from "@components/Typography";
 import React from "react";
 import { Col, Image as $Image, ImageProps, Nav, Row } from "react-bootstrap";
-import "./styles.scss";
 import { FormContact } from "./FormContact";
+import "./styles.scss";
 
 const Image: React.FC<ImageProps> = (props) => (
   <$Image
@@ -17,9 +17,9 @@ const Image: React.FC<ImageProps> = (props) => (
 
 export const Footer = () => {
   return (
-    <Section className="Footer">
+    <Section id="contact" className="Footer">
       <Title level={2} className="Footer__title">
-        DELY
+        Contacto
       </Title>
       <Row>
         <Col className="Locations__container-img" xs={12} md={12}>
@@ -31,7 +31,7 @@ export const Footer = () => {
                     style={{ marginRight: "10px" }}
                     className="fas fa-map-marker-alt text-white"
                   ></i>{" "}
-                  Av. Avenida 1 Nro. 1234 Mz. A - 1 Lt. 00
+                  Av. la Cultura Nro. 701, Santa Anita, Lima, Perú.
                 </li>
                 <li className="text-white d-flex align-items-center">
                   <i
@@ -39,13 +39,22 @@ export const Footer = () => {
                     style={{ marginRight: "10px" }}
                   ></i>
                   <div>
-                    <span className="text-white d-block">
-                      987654321 / 123-456
-                    </span>
-                    <span className="text-white d-block">
-                      987654321 / 123-456
-                    </span>
+                    <span className="text-white d-block">942421615</span>
                   </div>
+                </li>
+                <li className="text-white">
+                  <a
+                    href="https://wa.me/+51993583676?text=Hola"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                      className="text-white"
+                  >
+                    <i
+                      className="fab fa-whatsapp"
+                      style={{ marginRight: "5px" }}
+                    ></i>{" "}
+                    WhatsApp
+                  </a>
                 </li>
                 <li className="text-white">
                   <a className="text-white" href="">
@@ -53,7 +62,16 @@ export const Footer = () => {
                       className="fas fa-globe text-white"
                       style={{ marginRight: "10px" }}
                     ></i>{" "}
-                    web.com.pe
+                    ventas@dely.pe
+                  </a>
+                </li>
+                <li className="text-white">
+                  <a className="text-white" href="">
+                    <i
+                      className="fas fa-globe text-white"
+                      style={{ marginRight: "10px" }}
+                    ></i>{" "}
+                    sugerencias@dely.pe
                   </a>
                 </li>
               </ul>

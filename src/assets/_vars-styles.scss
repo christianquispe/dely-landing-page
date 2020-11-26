@@ -6,12 +6,11 @@ $black: #000;
 
 // Typography
 // ---
-$heading-1-size: ceil($font-size-base-custom * 4.71);
-$heading-2-size: ceil($font-size-base-custom * 4.14);
-$heading-3-size: ceil($font-size-base-custom * 3.71);
-$heading-4-size: ceil($font-size-base-custom * 3.42);
-$heading-5-size: ceil($font-size-base-custom * 3.14);
-$heading-6-size: ceil($font-size-base-custom * 2.71);
+$heading-1-size: ceil($font-size-base-custom * 2.71);
+$heading-2-size: ceil($font-size-base-custom * 2.14);
+$heading-3-size: ceil($font-size-base-custom * 1.71);
+$heading-4-size: ceil($font-size-base-custom * 1.42);
+$heading-5-size: ceil($font-size-base-custom * 1.14);
 $heading-color: fade($black, 85%);
 
 // Typography
@@ -19,3 +18,11 @@ $heading-color: fade($black, 85%);
 $typography-title-font-weight: 600;
 $typography-title-margin-top: 1.2em;
 $typography-title-margin-bottom: 0.5em;
+
+// Grid
+// ---
+$screen-lg: 992px;
+$screen-md: 768px;
+$screen-sm: 576px;
+$screen-xl: 1200px;
+$screen-xs: 576px;
