@@ -30,31 +30,31 @@ export const Products = () => {
     );
   });
   return (
-    <Section className="Products" fluid={true}>
-      <div className="Products__heading">
+    <Section className="Products section-common-home--gray" fluid={true}>
         <Title level={2} className="Products__title">
           Productos
         </Title>
+      <div className="Products__heading">
         <Tabs
           id="controlled-tab-example"
           activeKey={key}
           onSelect={(k) => setKey(k)}
         >
-          <Tab eventKey="groceries" title="Abarrotes">
+          <Tab eventKey="groceries" title="Fideos">
             <div style={{ padding: "20px" }}>
               <Row className="d-flex justify-content-between">
                 {productList}
               </Row>
             </div>
           </Tab>
-          <Tab eventKey="waters-and-drinks" title="Aguas y bebidas">
+          <Tab eventKey="waters-and-drinks" title="Conservas">
             <div style={{ padding: "20px" }}>
               <Row className="d-flex justify-content-between">
                 {productList}
               </Row>
             </div>
           </Tab>
-          <Tab eventKey="sausages" title="Embutidos">
+          <Tab eventKey="sausages" title="Aceites">
             <div style={{ padding: "20px" }}>
               <Row className="d-flex justify-content-between">
                 {productList}

@@ -1,1 +1,1 @@
-export * from './WhatsApp';
+export * from "./WhatsApp";

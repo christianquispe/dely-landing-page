@@ -1,8 +1,17 @@
 @import "./assets/vars-styles";
 
-body {
-  font-family: "Sintony", sans-serif;
+@font-face {
+    font-family: Lato;
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
 }
+
+body {
+  font-family: Lato !important;
+}
+  p {
+      color: #696969;
+  }
+
 /* The following block can be included in a custom.scss */
 
 /* make the customizations */

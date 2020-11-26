@@ -7,15 +7,19 @@ import "./Services.scss";
 
 export const Services = () => {
   return (
-    <Section className="Services" fluid={true} id="products-and-services">
-      <Container>
-        <Row>
-          <Col xs={12} md={6}>
+    <Section
+      className="Services section-common-home--white"
+      fluid={true}
+      id="products-and-services"
+    >
+      <Container className="section-common-home">
+        <Title level={2} className="Services__title text-center">
+          Servicios
+        </Title>
+        <div className="services-content-layout">
+          <div>
             <div className="Services__content">
-              <Title level={2} className="Services__title">
-                Servicios
-              </Title>
-              <p className="Services__subtitle">Ventas Institucionales</p>
+              <Title level={2} className="text-center">Ventas Institucionales</Title>
               <p>
                 Estamos dispuestos a brindar un servicio especializado y precios
                 justos, además contamos con todos los certificados
@@ -23,46 +27,43 @@ export const Services = () => {
                 vigente.
               </p>
             </div>
-          </Col>
+            <div className="d-flex justify-content-center">
+              <img src={image} alt="" className="Services__img" />
+            </div>
+          </div>
+          <div className="divider-horizontal"></div>
           <Col xs={12} md={6}>
-            <img src={image} alt="" className="Services__img" />
+            <div>
+              <Title level={2} className="text-center">Ventas Corporativa</Title>
+              <p>
+                Contamos con personal efectivo dispuesto a ofrecer productos de
+                calidad y con las mejores ofertas del mercado, para distintos
+                fines tales como: Donaciones, Productos para la realización de
+                canastas, entre otros.
+              </p>
+            </div>
           </Col>
-        </Row>
-        <Row>
-          <Col xs={12} sm={6} lg={3}>
+        </div>
+        <Row className="justify-content-center">
+          <div>
             <div className="Services__item">
               <div className="Services__item__img"></div>
               <span>Gobieno Regional</span>
             </div>
-          </Col>
-          <Col xs={12} sm={6} lg={3}>
+          </div>
             <div className="Services__item">
               <div className="Services__item__img"></div>
               <span>Qaliwarma</span>
             </div>
-          </Col>
-          <Col xs={12} sm={6} lg={3}>
             <div className="Services__item">
               <div className="Services__item__img"></div>
               <span>Municipalidades</span>
             </div>
-          </Col>
-          <Col xs={12} sm={6} lg={3}>
             <div className="Services__item">
               <div className="Services__item__img"></div>
               <span>Corporativos</span>
             </div>
-          </Col>
         </Row>
-        <div className="Services__sales-content">
-          <p className="Services__subtitle">Ventas Corporativa</p>
-          <p>
-            Contamos con personal efectivo dispuesto a ofrecer productos de
-            calidad y con las mejores ofertas del mercado, para distintos fines
-            tales como: Donaciones, Productos para la realización de canastas,
-            entre otros.
-          </p>
-        </div>
       </Container>
     </Section>
   );
