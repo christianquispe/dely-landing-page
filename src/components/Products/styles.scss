@@ -4,9 +4,10 @@
 $white: #ffffff;
 
 .Products {
-    .card {
-        border: none;
-    }
+  .card {
+    border: none;
+    border-radius: 8px;
+  }
   .Products__title {
     color: $primary-color;
     text-align: center;

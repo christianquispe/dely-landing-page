@@ -51,6 +51,10 @@ module.exports = {
         ],
       },
       {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: "file-loader",
+      },
+      {
         test: /\.(png|jpg|gif|mp3|ico)$/,
         use: [
           {
@@ -72,6 +76,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: "./public/index.html",
+      favicon: "./src/assets/logo-web/isotipo.svg",
     }),
     new SourceMapDevToolPlugin({
       filename: "[file].map",

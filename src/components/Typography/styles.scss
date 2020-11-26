@@ -3,21 +3,21 @@
 
 .title-level-1 {
   @include typography-title-1();
-  font-family: Lato;
+  font-family: Gotham-Book;
 }
 .title-level-2 {
   @include typography-title-2();
-  font-family: Lato;
+  font-family: Gotham-Book;
 }
 .title-level-3 {
   @include typography-title-3();
-  font-family: Lato;
+  font-family: Gotham-Book;
 }
 .title-level-4 {
   @include typography-title-4();
-  font-family: Lato;
+  font-family: Gotham-Book;
 }
 .title-level-5 {
   @include typography-title-5();
-  font-family: Lato;
+  font-family: Gotham-Book;
 }
