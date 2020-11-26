@@ -7,6 +7,7 @@
       "@*": ["./src/*"],
       "@i18n/*": ["./i18n/*"],
       "@config/*": ["./src/config/*"],
+      "@data/*": ["./src/data/*"],
       "@assets/*": ["./src/assets/*"],
       "@helpers/*": ["./src/helpers/*"],
       "@components/*": ["./src/components/*"],

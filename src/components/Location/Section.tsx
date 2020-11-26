@@ -4,7 +4,7 @@ import LocationsContext, {
   ILocationContextDefault
 } from "@helpers/LocationContext";
 import React, { useContext, useState } from "react";
-import { Button, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { Item } from "./Item";
 import "./styles.scss";
 
@@ -15,7 +15,6 @@ export const Location = () => {
     (acc, el: ILocationContextDefault) => [...acc, { [el.key]: el }],
     []
   );
-  console.log(Object.keys(indexed[0]));
   return (
     <Section id="locate-us">
       <Row className="align-items-center">
@@ -27,15 +26,18 @@ export const Location = () => {
             if (location.key === "address") {
               return (
                 <>
-                <div onClick={() => setLocation(index)} style={{ marginBottom:"20px" }}>
-                  <span className="d-block font-weight-bold">
-                    {location.address}
-                  </span>
-                  <span className="d-block">
-                    Horario de atención: {location.businessHours}
-                  </span>
-                </div>
-                <p>Sucursales</p>
+                  <div
+                    onClick={() => setLocation(index)}
+                    style={{ marginBottom: "20px" }}
+                  >
+                    <span className="d-block font-weight-bold">
+                      {location.address}
+                    </span>
+                    <span className="d-block">
+                      Horario de atención: {location.businessHours}
+                    </span>
+                  </div>
+                  <p>Sucursales</p>
                 </>
               );
             }

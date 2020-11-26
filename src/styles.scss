@@ -1,16 +1,21 @@
 @import "./assets/vars-styles";
 
 @font-face {
-    font-family: Lato;
-    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+  font-family: Gotham-Book;
+  src: url("./assets/fonts/GothamRoundedBook.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 }
 
 body {
-  font-family: Lato !important;
+  font-family: Gotham-Book !important;
 }
-  p {
-      color: #696969;
-  }
+p {
+  color: #696969;
+}
 
 /* The following block can be included in a custom.scss */
 
