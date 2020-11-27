@@ -18,8 +18,8 @@ export const AboutUs = () => {
             <br></br>
             <br></br>
             <br></br>
-            <Col xs={12} md={5}>
-              <div className="text-center about-us-description">
+            <Col xs={12} md={12}>
+              <div className="text-center about-us-resumen">
                 <Title className="AboutUs__title text-center" level={4}>
                   Resumen
                 </Title>
@@ -32,7 +32,7 @@ export const AboutUs = () => {
                 </p>
               </div>
             </Col>
-            <Col xs={12} md={7}>
+            <Col xs={12} md={12}>
               <div className="about-us-mision-vision">
                 <div>
                   <Title className="AboutUs__title text-center" level={4}>

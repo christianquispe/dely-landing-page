@@ -1,4 +1,4 @@
-import { About, Home } from "@pages";
+import { Home } from "@pages";
 import React from "react";
 
 export interface IRoutes {
@@ -14,12 +14,6 @@ export const routes: IRoutes[] = [
     path: "/",
     component: Home,
     id: "home",
-    exact: true,
-  },
-  {
-    path: "/about",
-    component: About,
-    id: "about",
     exact: true,
   },
 ];

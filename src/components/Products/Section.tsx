@@ -1,6 +1,6 @@
 import { Section } from "@components/Section";
 import { Title } from "@components/Typography";
-import { aceiteData, conservaData, fideosData } from "@data/productsData";
+import { aceiteData, conservaData, fideosData } from "@data";
 import React, { useState } from "react";
 import { Card, Col, Row, Tab, Tabs } from "react-bootstrap";
 import "./styles.scss";
