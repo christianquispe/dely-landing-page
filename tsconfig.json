@@ -15,6 +15,7 @@
       "@tests/*": ["./tests/*"]
     },
     "allowJs": true,
+    "typeRoots": ["src/declaration.d.ts", "./node_modules/@types"],
     "preserveConstEnums": true,
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
