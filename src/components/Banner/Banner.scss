@@ -26,6 +26,7 @@ $white: #ffffff;
 }
 
 .Banner__img {
-  height: 500px;
+  max-height: 100vh;
   object-fit: cover;
+  object-position: top;
 }
