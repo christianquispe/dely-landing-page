@@ -19,7 +19,9 @@ export const Services = () => {
         <div className="services-content-layout">
           <div>
             <div className="Services__content">
-              <Title level={2} className="text-center">Ventas Institucionales</Title>
+              <Title level={2} className="text-center">
+                Ventas Institucionales
+              </Title>
               <p>
                 Estamos dispuestos a brindar un servicio especializado y precios
                 justos, además contamos con todos los certificados
@@ -34,7 +36,9 @@ export const Services = () => {
           <div className="divider-horizontal"></div>
           <Col xs={12} md={6}>
             <div>
-              <Title level={2} className="text-center">Ventas Corporativa</Title>
+              <Title level={2} className="text-center">
+                Ventas Corporativa
+              </Title>
               <p>
                 Contamos con personal efectivo dispuesto a ofrecer productos de
                 calidad y con las mejores ofertas del mercado, para distintos
@@ -44,25 +48,25 @@ export const Services = () => {
             </div>
           </Col>
         </div>
-        <Row className="justify-content-center">
+        <Row className="Services__list">
           <div>
             <div className="Services__item">
               <div className="Services__item__img"></div>
               <span>Gobieno Regional</span>
             </div>
           </div>
-            <div className="Services__item">
-              <div className="Services__item__img"></div>
-              <span>Qaliwarma</span>
-            </div>
-            <div className="Services__item">
-              <div className="Services__item__img"></div>
-              <span>Municipalidades</span>
-            </div>
-            <div className="Services__item">
-              <div className="Services__item__img"></div>
-              <span>Corporativos</span>
-            </div>
+          <div className="Services__item">
+            <div className="Services__item__img"></div>
+            <span>Qaliwarma</span>
+          </div>
+          <div className="Services__item">
+            <div className="Services__item__img"></div>
+            <span>Municipalidades</span>
+          </div>
+          <div className="Services__item">
+            <div className="Services__item__img"></div>
+            <span>Corporativos</span>
+          </div>
         </Row>
       </Container>
     </Section>
