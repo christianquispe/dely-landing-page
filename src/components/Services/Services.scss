@@ -35,6 +35,11 @@ $color: #2d3d0e;
   font-size: 32px;
 }
 
+.Services__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .Services__item {
   font-size: 20px;
   font-weight: 500;
@@ -62,5 +67,9 @@ $color: #2d3d0e;
 @media screen and (min-width: $screen-md) {
   .services-content-layout {
     flex-direction: row;
+  }
+  .Services__list {
+    display: flex;
+    justify-content: center;
   }
 }
