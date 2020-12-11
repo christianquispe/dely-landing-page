@@ -47,7 +47,7 @@ export const Footer = () => {
                     href="https://wa.me/+51993583676?text=Hola"
                     target="_blank"
                     rel="noopener noreferrer"
-                      className="text-white"
+                    className="text-white"
                   >
                     <i
                       className="fab fa-whatsapp"
