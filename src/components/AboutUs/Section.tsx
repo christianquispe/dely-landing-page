@@ -19,20 +19,6 @@ export const AboutUs = () => {
             <br></br>
             <br></br>
             <Col xs={12} md={12}>
-              <div className="text-center about-us-resumen">
-                <Title className="AboutUs__title text-center" level={4}>
-                  Resumen
-                </Title>
-                <p className="text-center">
-                  Consorcio Dely S.A.C. identificada con el RUC: 20601228492 es
-                  una empresa peruana dedicada a la comercialización de
-                  abarrotes en el canal mayorista a nivel nacional, contamos con
-                  un amplio surtido de productos gracias a nuestros aliados
-                  como: P&G, Alicorp, Nestlé, Gloria, Molitalia, entre otros.
-                </p>
-              </div>
-            </Col>
-            <Col xs={12} md={12}>
               <div className="about-us-mision-vision">
                 <div>
                   <Title className="AboutUs__title text-center" level={4}>
