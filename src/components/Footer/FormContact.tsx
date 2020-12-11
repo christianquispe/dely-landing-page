@@ -4,7 +4,7 @@ import {
   TEMPLATE_ID,
   TO_EMAIL,
   TO_NAME,
-  USER_ID
+  USER_ID,
 } from "@config/constants";
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
