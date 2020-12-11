@@ -20,6 +20,7 @@ export const Products = () => {
               {product.brand}
             </Card.Title>
             <Card.Text className="text-center">{product.name}</Card.Text>
+            <Card.Body className="text-center">{product.description}</Card.Body>
           </Card.Body>
         </Card>
       </Col>
@@ -39,6 +40,7 @@ export const Products = () => {
               {product.brand}
             </Card.Title>
             <Card.Text className="text-center">{product.name}</Card.Text>
+            <Card.Body className="text-left">{product.description}</Card.Body>
           </Card.Body>
         </Card>
       </Col>
@@ -58,6 +60,7 @@ export const Products = () => {
               {product.brand}
             </Card.Title>
             <Card.Text className="text-center">{product.name}</Card.Text>
+            <Card.Body className="text-left">{product.description}</Card.Body>
           </Card.Body>
         </Card>
       </Col>
