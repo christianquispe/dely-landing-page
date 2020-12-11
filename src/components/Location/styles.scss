@@ -2,16 +2,14 @@
 @import "../../assets/viewport-vars";
 
 .Locations__title {
-    color: $primary-color;
-    text-align: center;
+  color: $primary-color;
+  text-align: center;
 }
 
 .Locations__img {
-  display: none;
-  max-width: 100%;
+  display: block;
+  width: 100%;
   border-radius: 20px;
-  height: 600px;
-  width: 500px;
   object-fit: cover;
 }
 
