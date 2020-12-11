@@ -10,7 +10,10 @@ export const WhatsAppFixed = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-          <i className="fab fa-whatsapp" style={{ fontSize: "40px", color: "#fff" }}></i>
+        <i
+          className="fab fa-whatsapp"
+          style={{ fontSize: "40px", color: "#fff" }}
+        ></i>
       </a>
     </div>
   );
