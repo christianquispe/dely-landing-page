@@ -1,54 +1,70 @@
+import fideosCanuto from "@assets/productos/lenysol-fideos-canuto.jpg";
 import fideosCodo from "@assets/productos/lenysol-fideos-codito.jpg";
+import fideosPlumita from "@assets/productos/lenysol-fideos-plumita.jpg";
 import fideosRigaton from "@assets/productos/lenysol-fideos-rigaton.jpg";
 import fideosSpaguetti from "@assets/productos/lenysol-fideos-spagheti.jpg";
-import {
-  default as fideosCanuto,
-  default as fideosTornillo,
-} from "@assets/productos/lenysol-fideos-tornillo.jpg";
+import fideosTornillo from "@assets/productos/lenysol-fideos-tornillo.jpg";
 
 export const fideosData = [
   {
-    id: 1,
-    companyId: 1,
-    brand: "FIDEOS CORTO",
-    name: "LENYSOL SOPA CARACOL ",
-    image: fideosCanuto,
-    price: 100,
-    discount: 10,
-  },
-  {
-    id: 2,
-    companyId: 1,
-    brand: "FIDEOS CORTO",
-    name: "LENYSOL SOPA CODO",
-    image: fideosCodo,
-    price: 100,
-    discount: 10,
-  },
-  {
-    id: 3,
-    companyId: 1,
-    brand: "FIDEOS CORTO",
-    name: "LENYSOL SOPA RIGATON",
-    image: fideosRigaton,
-    price: 100,
-    discount: 10,
-  },
-  {
-    id: 4,
-    companyId: 1,
-    brand: "FIDEOS CORTO",
-    name: "LENYSOL SOPA TORNILLO",
-    image: fideosTornillo,
-    price: 100,
-    discount: 10,
-  },
-  {
-    id: 5,
-    companyId: 1,
+    id: "lenysol_spaguetti",
     brand: "FIDEOS LARGO",
     name: "LENYSOL SPAGUETTI",
     image: fideosSpaguetti,
+    description: "Presentación | Bolsa x 20unds. ",
+    price: 100,
+    discount: 10,
+  },
+  {
+    id: "lenysol_sopa_caracol",
+    brand: "FIDEOS CORTO",
+    name: "LENYSOL CARACOL",
+    image: fideosCanuto,
+    description: "Presentación | Bolsa x 20unds.",
+    discount: 10,
+  },
+  {
+    id: "lenysol_sopa_codo",
+    brand: "FIDEOS CORTO",
+    name: "LENYSOL CODO",
+    image: fideosCodo,
+    description: "Presentación | Bolsa x 20unds.",
+    price: 100,
+    discount: 10,
+  },
+  {
+    id: "lenysol_sopa_rigaton",
+    brand: "FIDEOS CORTO",
+    name: "LENYSOL RIGATON",
+    image: fideosRigaton,
+    description: "Presentación | Bolsa x 20unds.",
+    price: 100,
+    discount: 10,
+  },
+  {
+    id: "lenysol_sopa_tornillo",
+    brand: "FIDEOS CORTO",
+    name: "LENYSOL TORNILLO",
+    image: fideosTornillo,
+    description: "Presentación | Bolsa x 20unds.",
+    price: 100,
+    discount: 10,
+  },
+  {
+    id: "lenysol_plumita",
+    brand: "FIDEOS CORTO",
+    name: "LENYSOL PLUMITA",
+    image: fideosPlumita,
+    description: "Presentación | Bolsa x 20unds.",
+    price: 100,
+    discount: 10,
+  },
+  {
+    id: "lenysol_canuto",
+    brand: "FIDEOS CORTO",
+    name: "LENYSOL CANUTO",
+    image: fideosCanuto,
+    description: "Presentación | Bolsa x 20unds.",
     price: 100,
     discount: 10,
   },
