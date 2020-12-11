@@ -30,7 +30,7 @@ export const aceiteData = [
     discount: 10,
   },
   {
-    id: 9,
+    id: 10,
     companyId: 1,
     brand: "ACEITE VEGETAL",
     name: "LENYSOL ACEITE x 12und x 900ml",
@@ -39,7 +39,7 @@ export const aceiteData = [
     discount: 10,
   },
   {
-    id: 9,
+    id: 11,
     companyId: 1,
     brand: "ACEITE VEGETAL",
     name: "LENYSOL ACEITE x 6und x 2L",
