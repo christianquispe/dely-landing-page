@@ -1,7 +1,7 @@
 import { Section } from "@components/Section";
 import { Title } from "@components/Typography";
 import LocationsContext, {
-  ILocationContextDefault
+  ILocationContextDefault,
 } from "@helpers/LocationContext";
 import React, { useContext, useState } from "react";
 import { Col, Row } from "react-bootstrap";
@@ -11,10 +11,6 @@ import "./styles.scss";
 export const Location = () => {
   const [location, setLocation] = useState(0);
   const allLocations = useContext(LocationsContext);
-  const indexed = allLocations.reduce(
-    (acc, el: ILocationContextDefault) => [...acc, { [el.key]: el }],
-    []
-  );
   return (
     <Section id="locate-us">
       <Row className="align-items-center">
@@ -25,7 +21,7 @@ export const Location = () => {
           {allLocations.map((location: ILocationContextDefault, index) => {
             if (location.key === "address") {
               return (
-                <>
+                <div key={index}>
                   <div
                     onClick={() => setLocation(index)}
                     style={{ marginBottom: "20px" }}
@@ -38,11 +34,11 @@ export const Location = () => {
                     </span>
                   </div>
                   <p>Sucursales</p>
-                </>
+                </div>
               );
             }
             return (
-              <Col key={index} xs="12">
+              <Col key={index} xs={12} lg={6}>
                 <Item
                   onClick={() => setLocation(index)}
                   name={location.name}
@@ -52,7 +48,7 @@ export const Location = () => {
             );
           })}
         </Col>
-        <Col className="Locations__container-img" xs={12} md={6}>
+        <Col className="Locations__container-img" xs={12} lg={6}>
           <img
             src={allLocations[location].image}
             alt=""
