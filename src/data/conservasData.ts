@@ -1,6 +1,7 @@
 import conservaDelyfish from "@assets/productos/conserva-delyfish.jpg";
 import conservaFileteCaballa from "@assets/productos/dely-conserva-filete-de-caballa.jpg";
 import lenimarCaballa from "@assets/productos/lenymar-conserva-caballa.jpg";
+import lenysolFileteCaballa from "@assets/productos/lennysol-conserva-de-caballa.jpg";
 import lenimarFileteAtunAzul from "@assets/productos/lenymar-filete-de-atun-azul.jpg";
 import lenimarFileteAtun from "@assets/productos/lenymar-filete-de-atun.jpg";
 import lenimarPescadoEntero425 from "@assets/productos/lenymar-pescado-entero-425-gr.jpg";
@@ -8,6 +9,9 @@ import lenimarPescadoEntero from "@assets/productos/lenymar-pescado-entero.jpg";
 import lenysolAnchoveta from "@assets/productos/lenysol-conserva-de-anchoveta.jpg";
 import duraznoAlmibar from "@assets/productos/lenysol-durazno.jpg";
 import lenysolGratedSardina from "@assets/productos/lenysol-grated-de-sardina.jpg";
+import anchovetaSalsaPescado from "@assets/productos/lenymar-conserva-de-anchoveta-salsa-de-tomato.jpg";
+import lenymarOvalAnchoveta from "@assets/productos/lenymar-grated-anchoveta.jpg";
+import lenymarTallAnchoveta from "@assets/productos/lenymar-anchoveta-verde.jpg";
 
 export const conservaData = [
   {
@@ -72,14 +76,14 @@ export const conservaData = [
     id: "lenymar_tall_verde_de_anchoveta",
     brand: "CONSERVA DE PESCADO",
     name: "LENYMAR TALL (VERDE) DE ANCHOVETA",
-    image: lenysolAnchoveta,
+    image: lenymarTallAnchoveta,
     description: "Anchoveta envasado en aceite vegetal.",
     weight: 425,
   },
   {
     id: "lenymar_oval_entero_de_pescado",
     brand: "CONSERVA DE PESCADO",
-    name: "LENYMAR OVAL ENTERO DE PESCADO  ",
+    name: "LENYMAR OVAL ENTERO DE PESCADO",
     image: lenimarPescadoEntero,
     description: "Pescado entero envasado en salsa de tomate.",
     weight: 425,
@@ -88,7 +92,7 @@ export const conservaData = [
     id: "lenymar_oval_anchoveta",
     brand: "CONSERVA DE PESCADO",
     name: "LENYMAR OVAL ANCHOVETA",
-    image: lenimarPescadoEntero,
+    image: lenymarOvalAnchoveta,
     description: "Anchoveta en salsa de tomate.",
     weight: 425,
   },
@@ -104,7 +108,7 @@ export const conservaData = [
     id: "lenymar_tinapon",
     brand: "CONSERVA DE PESCADO",
     name: "LENYMAR TINAPON ",
-    image: lenimarPescadoEntero425,
+    image: anchovetaSalsaPescado,
     description: "Anchoveta envasada en salsa de tomate.",
     weight: 200,
   },
@@ -120,7 +124,7 @@ export const conservaData = [
     id: "lenysol_filete_de_caballa",
     brand: "CONSERVA DE PESCADO",
     name: "LENYSOL FILETE  DE CABALLA ",
-    image: lenysolGratedSardina,
+    image: lenysolFileteCaballa,
     description: "Filete de Caballa envasado en aceite vegetal.",
     weight: 170,
   },
