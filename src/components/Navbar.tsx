@@ -1,8 +1,7 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import "./Navbar.scss";
-import { Title } from "./Typography";
-import logo from "../assets/logo-web/logo-sin-slogan.png";
+import logo from "../assets/logo-web/logo-web.png";
 
 export const NavBar: React.FC = () => {
   return (
