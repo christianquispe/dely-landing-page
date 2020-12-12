@@ -22,7 +22,6 @@ export const Home: React.FC = () => {
       <AboutUs />
       <Services />
       <Products />
-      <Brands />
       <Supports />
       <LocationsContext.Provider value={LocationContextDefault}>
         <Location />
