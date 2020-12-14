@@ -68,7 +68,11 @@ export const Products = () => {
   });
 
   return (
-    <Section className="Products section-common-home--gray" fluid={true}>
+    <Section
+      className="Products section-common-home--gray"
+      fluid={true}
+      id="products"
+    >
       <Title level={2} className="Products__title">
         Productos
       </Title>
