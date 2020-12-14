@@ -18,10 +18,13 @@ import sanJorge from "../../assets/marcas-socios/san-jorge.png";
 import molinoElTriunfo from "../../assets/marcas-socios/molino-el-triunfo.jpg";
 import pg from "../../assets/marcas-socios/pg.jpg";
 import "./styles.scss";
+import { Title } from "@components/Typography";
 export const Supports = () => {
   return (
-    <Section>
-      <span className="Supports__title">Con el apoyo de:</span>
+    <Section type="white">
+      <Title level={2} className="Supports__title">
+        Con el apoyo de
+      </Title>
       <div className="Supports__container-img">
         <Image className="Supports__img" src={incasur} alt="" rounded />
         <Image className="Supports__img" src={sanJorge} alt="" rounded />

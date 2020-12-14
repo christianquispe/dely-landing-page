@@ -2,8 +2,6 @@
 @import "../../assets/viewport-vars";
 
 .Supports__container-img {
-  border-top: 1px solid $gray-color;
-  border-bottom: 1px solid $gray-color;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -12,8 +10,8 @@
 
 .Supports__title {
   margin-bottom: 10px;
-  font-size: 20px;
-  display: block;
+  color: #696969;
+  text-align: center;
 }
 
 .Supports__img {
