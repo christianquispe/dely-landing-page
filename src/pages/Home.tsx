@@ -1,6 +1,5 @@
 import { AboutUs } from "@components/AboutUs";
 import { Banner } from "@components/Banner";
-import { Brands } from "@components/Brands";
 import { WhatsAppFixed } from "@components/Fixed";
 import { Footer } from "@components/Footer";
 import { Location } from "@components/Location";
