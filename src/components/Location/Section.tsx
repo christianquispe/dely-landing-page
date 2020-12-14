@@ -12,7 +12,7 @@ export const Location = () => {
   const [location, setLocation] = useState(0);
   const allLocations = useContext(LocationsContext);
   return (
-    <Section id="locate-us">
+    <Section id="locate-us" type="gray">
       <Row className="align-items-center">
         <Col xs={12} lg={6}>
           <Title className="Locations__title" level={2}>
