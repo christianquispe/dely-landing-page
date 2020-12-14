@@ -21,15 +21,15 @@ export const NavBar: React.FC = () => {
             </Nav.Link>
             <Nav.Link
               className="font-weight-bold Navbar-custom__item"
-              href="#products-and-services"
+              href="#services"
             >
-              Productos y servicios
+              Servicios
             </Nav.Link>
             <Nav.Link
               className="font-weight-bold Navbar-custom__item"
-              href="#brands"
+              href="#products"
             >
-              Marcas Dely
+              Productos
             </Nav.Link>
             <Nav.Link
               className="font-weight-bold Navbar-custom__item"
