@@ -9,16 +9,19 @@ interface ISection
     HTMLElement
   > {
   fluid?: boolean;
+  type?: "white" | "gray";
 }
 
 export const Section: React.FC<ISection> = ({
   className,
   children,
   fluid,
+  type,
   ...rest
 }) => {
   const classes = classNames(className, "Section", {
     [`Section-fluid`]: fluid,
+    [`Section--${type}`]: type,
   });
   return (
     <section className={classes} {...rest}>
