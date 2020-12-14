@@ -12,6 +12,7 @@ import lenysolGratedSardina from "@assets/productos/lenysol-grated-de-sardina.jp
 import anchovetaSalsaPescado from "@assets/productos/lenymar-conserva-de-anchoveta-salsa-de-tomato.jpg";
 import lenymarOvalAnchoveta from "@assets/productos/lenymar-grated-anchoveta.jpg";
 import lenymarTallAnchoveta from "@assets/productos/lenymar-anchoveta-verde.jpg";
+import delyFileteJurel from "@assets/productos/delyfish-premiun.jpg";
 
 export const conservaData = [
   {
@@ -43,7 +44,7 @@ export const conservaData = [
     id: "dely_fish_filete_de_jurel",
     brand: "CONSERVA DE PESCADO",
     name: "DELY FISH FILETE DE JUREL",
-    image: conservaDelyfish,
+    image: delyFileteJurel,
     description: "Pescado Jurel envasado en aceite vegetal.",
     weight: 170,
   },

@@ -4,6 +4,7 @@ import fideosPlumita from "@assets/productos/lenysol-fideos-plumita.jpg";
 import fideosRigaton from "@assets/productos/lenysol-fideos-rigaton.jpg";
 import fideosSpaguetti from "@assets/productos/lenysol-fideos-spagheti.jpg";
 import fideosTornillo from "@assets/productos/lenysol-fideos-tornillo.jpg";
+import fideosCaracol from "@assets/productos/lenysol-caracol.jpg";
 
 export const fideosData = [
   {
@@ -19,7 +20,7 @@ export const fideosData = [
     id: "lenysol_sopa_caracol",
     brand: "FIDEOS CORTO",
     name: "LENYSOL CARACOL",
-    image: fideosCanuto,
+    image: fideosCaracol,
     description: "Presentación | Bolsa x 20unds.",
     discount: 10,
   },
