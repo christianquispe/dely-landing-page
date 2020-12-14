@@ -1,6 +1,6 @@
 import React from "react";
-import locationOne from "@assets/puntos-de-venta/001.jpg";
-import locationTwo from "@assets/puntos-de-venta/002.jpg";
+import locationTwo from "@assets/puntos-de-venta/001.jpg";
+import locationOne from "@assets/puntos-de-venta/002.jpg";
 
 export interface ILocationContextDefault {
   name: string;
