@@ -92,17 +92,17 @@ export const Footer = () => {
                 </Nav.Link>
                 <Nav.Link
                   className="text-white text-uppercase"
-                  eventKey="link-1"
-                  href="#products-and-services"
+                  eventKey="link-2"
+                  href="#services"
                 >
-                  Productos y servicios
+                  Servicios
                 </Nav.Link>
                 <Nav.Link
                   className="text-white text-uppercase"
-                  eventKey="link-2"
-                  href="#brands"
+                  eventKey="link-1"
+                  href="#products"
                 >
-                  Marcas dely
+                  Productos
                 </Nav.Link>
                 <Nav.Link
                   className="text-white text-uppercase"
