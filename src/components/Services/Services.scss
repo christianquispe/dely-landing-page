@@ -1,6 +1,5 @@
 @import "../../assets/vars-styles";
-$red-bg: $second-color;
-$bg-color: #f7e000;
+$bg-color: #a6cd39;
 $white: #ffffff;
 $color: #2d3d0e;
 
@@ -15,7 +14,6 @@ $color: #2d3d0e;
 
 .services-content-layout {
   display: flex;
-  padding: 30px 35px;
   flex-direction: column;
 }
 
@@ -27,12 +25,11 @@ $color: #2d3d0e;
 }
 
 .Services__title {
-  color: $primary-color;
+  color: #696969;
 }
 
 .Services__subtitle {
-  font-weight: bold;
-  font-size: 32px;
+  color: $primary-color;
 }
 
 .Services__list {
@@ -53,6 +50,10 @@ $color: #2d3d0e;
   }
 }
 
+.Service {
+  margin-bottom: 20px;
+}
+
 .Services__item__img {
   border-radius: 50%;
   width: 40px;
@@ -62,6 +63,7 @@ $color: #2d3d0e;
 
 .Services__img {
   height: 240px;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: $screen-md) {
@@ -71,5 +73,8 @@ $color: #2d3d0e;
   .Services__list {
     display: flex;
     justify-content: center;
+  }
+  .services-content-layout {
+    padding: 30px 35px;
   }
 }
