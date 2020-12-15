@@ -28,8 +28,10 @@
   background-color: #fff;
   padding: 10px 15px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  column-gap: 20px; 
 }
 
 .divider-horizontal {
@@ -80,4 +82,9 @@
   .about-us-mision-vision {
     padding: 20px 25px;
   }
+
+.about-us-mision-vision {
+  grid-template-columns: 1fr 1fr;
+}
+
 }
