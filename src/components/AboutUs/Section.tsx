@@ -1,8 +1,7 @@
 import { Section } from "@components/Section";
 import { Title } from "@components/Typography";
 import React from "react";
-import { Container } from "react-bootstrap";
-import imageMision from "../../assets/about-us/mision.jpg";
+import imageMision from "../../assets/about-us/mision.png";
 import "./styles.scss";
 
 export const AboutUs = () => {
@@ -12,15 +11,24 @@ export const AboutUs = () => {
         <Title className="AboutUs__title text-center" level={2}>
           Nosotros
         </Title>
-        <br></br>
-        <br></br>
-        <br></br>
         <div className="about-us-mision-vision">
           <img
             className="AboutUs__img"
             src={imageMision}
             alt="Vision de la empresa"
           />
+          <div>
+            <Title className="AboutUs__subtitle text-center" level={4}>
+              Reseña de la empresa
+            </Title>
+            <p className="text-center">
+              Consorcio Dely S.A.C. identificada con el RUC: 20601228492 es una
+              empresa peruana dedicada a la comercialización de abarrotes en el
+              canal mayorista a nivel nacional, contamos con un amplio surtido
+              de productos gracias a nuestros aliados como: P&G, Alicorp,
+              Nestlé, Gloria, Molitalia, entre otros.
+            </p>
+          </div>
           <div>
             <Title className="AboutUs__subtitle text-center" level={4}>
               Misión
@@ -31,7 +39,6 @@ export const AboutUs = () => {
               de calidad.
             </p>
           </div>
-          <div className="divider-horizontal"></div>
           <div>
             <Title className="AboutUs__subtitle text-center" level={4}>
               Visión
