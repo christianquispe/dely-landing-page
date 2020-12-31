@@ -8,6 +8,7 @@
     "start": "yarn clean && webpack-dev-server --config webpack.config.dev.js",
     "dev": "yarn start",
     "build": "webpack --config webpack.config.prod.js",
+    "build:dev": "webpack --config webpack.config.dev.js",
     "prettier:lint": "prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,graphql,less}' --write=false --list-different",
     "prettier:fix": "yarn prettier:lint --write=true"
   },
