@@ -1,10 +1,10 @@
 import {
   SERVICE_ID,
-  SUBJECT_MAIL,
+
   TEMPLATE_ID,
   TO_EMAIL,
   TO_NAME,
-  USER_ID,
+  USER_ID
 } from "@config/constants";
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
@@ -23,12 +23,11 @@ export const FormContact: React.FC = () => {
     e.preventDefault();
 
     const templateParams = {
-      from_name: values.name,
-      from_email: values.email,
+      form_name: values.name,
+      form_email: values.email,
+      form_message: values.message,
       to_name: TO_NAME,
-      to_email: TO_EMAIL,
-      subject: SUBJECT_MAIL,
-      message: values.message,
+      reply_to: TO_EMAIL,
     };
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID).then(
