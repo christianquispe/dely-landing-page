@@ -10,6 +10,7 @@ const dev = {
     sourceMapFilename: "[file].map",
     path: path.resolve("build/"),
   },
+  plugins: [new Dotenv({ path: `${__dirname}/src/config/vars/dev` })],
   devServer: {
     hot: true,
     open: true,
