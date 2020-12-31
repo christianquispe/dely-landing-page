@@ -3,5 +3,5 @@ USER_ID=user_DUR5hielTkjyhWXFu8W4B
 TEMPLATE_ID=template_1xpl05b
 
 # Template vars
-TO_EMAIL="destination.mail@gmail.com"
+TO_EMAIL="dely.web.mail@gmail.com"
 TO_NAME="Dely Ventas"
