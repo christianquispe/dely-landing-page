@@ -6,7 +6,7 @@ export const WhatsAppFixed = () => {
   return (
     <div className="WhatsAppFixed">
       <a
-        href="https://wa.me/+51993583676?text=Hola"
+        href="https://wa.me/+51957689893"
         target="_blank"
         rel="noopener noreferrer"
       >
