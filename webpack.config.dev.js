@@ -1,6 +1,7 @@
 const path = require("path");
 const merge = require("webpack-merge");
 const common = require("./webpack.config.base.js");
+const Dotenv = require("dotenv-webpack");
 
 const dev = {
   entry: "./src/index",

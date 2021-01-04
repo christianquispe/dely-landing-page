@@ -13,7 +13,7 @@ export interface ILocationContextDefault {
 export const LocationContextDefault: ILocationContextDefault[] = [
   {
     name: "Dely Sucursal",
-    address: "Av. la Cultura Nro. 701, Santa Anita, Lima, Perú.",
+    address: "Av. la Cultura Nro. 701, Mercado Productores, Santa Anita, Lima, Perú.",
     key: "address",
     businessHours: "8:30am a 8:00pm",
     image: locationOne,
