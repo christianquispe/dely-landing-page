@@ -45,7 +45,7 @@ export const NavBar: React.FC = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <a href="http://www.dely.pe/" target="_blank" rel="noopener noreferrer">
+        <a href="http://148.102.127.166:9090/DelyConsorcio/" target="_blank" rel="noopener noreferrer">
           <Button size="sm" type="primary">
             Consultar Factura / boleta electrónica
           </Button>
