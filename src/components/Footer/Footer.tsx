@@ -31,7 +31,7 @@ export const Footer = () => {
                     style={{ marginRight: "10px" }}
                     className="fas fa-map-marker-alt text-white"
                   ></i>{" "}
-                  Av. la Cultura Nro. 701, Santa Anita, Lima, Perú.
+                  Av. la Cultura Nro. 701, Mercado Productores, Santa Anita, Lima, Perú.
                 </li>
                 <li className="text-white d-flex align-items-center">
                   <i
@@ -44,7 +44,7 @@ export const Footer = () => {
                 </li>
                 <li className="text-white">
                   <a
-                    href="https://wa.me/+51993583676?text=Hola"
+                    href="https://wa.me/+51957689893"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white"
@@ -63,15 +63,6 @@ export const Footer = () => {
                       style={{ marginRight: "10px" }}
                     ></i>{" "}
                     ventas@dely.pe
-                  </a>
-                </li>
-                <li className="text-white">
-                  <a className="text-white" href="">
-                    <i
-                      className="fas fa-globe text-white"
-                      style={{ marginRight: "10px" }}
-                    ></i>{" "}
-                    sugerencias@dely.pe
                   </a>
                 </li>
               </ul>
