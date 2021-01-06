@@ -40,10 +40,9 @@ export const Footer = () => {
                     style={{ marginRight: "10px" }}
                   ></i>
                   <div>
-                    <a
-                      className="text-white d-block"
-                      href="tel:+51957689893"
-                    ></a>
+                    <a className="text-white d-block" href="tel:+51957689893">
+                      +51 957 689 893
+                    </a>
                   </div>
                 </li>
                 <li className="text-white">
@@ -55,8 +54,8 @@ export const Footer = () => {
                   >
                     <i
                       className="fab fa-whatsapp"
-                      style={{ marginRight: "5px" }}
-                    ></i>{" "}
+                      style={{ marginRight: "10px" }}
+                    ></i>
                     WhatsApp
                   </a>
                 </li>
@@ -65,7 +64,7 @@ export const Footer = () => {
                     <i
                       className="fas fa-globe text-white"
                       style={{ marginRight: "10px" }}
-                    ></i>{" "}
+                    ></i>
                     ventas@dely.pe
                   </a>
                 </li>
