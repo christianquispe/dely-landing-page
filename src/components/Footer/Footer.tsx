@@ -31,7 +31,8 @@ export const Footer = () => {
                     style={{ marginRight: "10px" }}
                     className="fas fa-map-marker-alt text-white"
                   ></i>{" "}
-                  Av. la Cultura Nro. 701, Mercado Productores, Santa Anita, Lima, Perú.
+                  Av. la Cultura Nro. 701, Mercado Productores, Santa Anita,
+                  Lima, Perú.
                 </li>
                 <li className="text-white d-flex align-items-center">
                   <i
@@ -39,7 +40,10 @@ export const Footer = () => {
                     style={{ marginRight: "10px" }}
                   ></i>
                   <div>
-                    <span className="text-white d-block">942421615</span>
+                    <a
+                      className="text-white d-block"
+                      href="tel:+51957689893"
+                    ></a>
                   </div>
                 </li>
                 <li className="text-white">
